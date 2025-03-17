@@ -1,9 +1,124 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<title>测试</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模创三维 - 人才招聘</title>
+    <style>
+        :root {
+            --primary-color: #2A5B96;  /* 主色调 */
+            --accent-color: #38f;   /* 强调色 */
+            --font-color: #FFF;
+        }
+        body {
+            font-family: '微软雅黑', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: url(./bg.jpg) no-repeat;
+            background-size: cover;
+            color: var(--font-color)
+        }
+        .header {
+            background: rgba(3, 4, 20, .9);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .jobs-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .job-card {
+            border: 2px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        .requirements {
+            background: #235;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid var(--accent-color);
+        }
+        .apply-button {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 1rem auto;
+            display: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+        }
+    </style>
 </head>
 <body>
-	<h1>我是一级标题</h1>
+    <div class="header">
+        <img src="./logo.png" alt="模创三维" width="150">
+        <h1>模创三维2024年人才招聘</h1>
+        <p>专注工业测量设备研发制造15年 | ISO 9001认证企业</p>
+    </div>
+
+    <!-- 销售岗位 -->
+    <section class="jobs-section">
+        <div class="job-card">
+            <h2>🔍 销售工程师（测量设备）</h2>
+            <div class="requirements">
+                <h3>岗位要求：</h3>
+                <ul>
+                    <li>机械/自动化相关专业本科以上</li>
+                    <li>2年以上工业设备销售经验</li>
+                    <li>熟悉CAD/测量仪器者优先</li>
+                    <li>能适应全国范围出差</li>
+                </ul>
+            </div>
+            <h3>岗位职责：</h3>
+            <p>负责华东区域客户开发、技术方案讲解、销售合同跟进</p>
+            <button class="apply-button">立即申请</button>
+        </div>
+
+        <!-- 技术岗位 -->
+        <div class="job-card">
+            <h2>⚙️ 测量技术工程师</h2>
+            <div class="requirements">
+                <h3>岗位要求：</h3>
+                <ul>
+                    <li>精密仪器/测控技术专业硕士</li>
+                    <li>精通C++/Python编程</li>
+                    <li>有激光测量项目经验者优先</li>
+                    <li>英语六级以上</li>
+                </ul>
+            </div>
+            <h3>岗位职责：</h3>
+            <p>参与三坐标测量机软件开发与算法优化</p>
+            <button class="apply-button">立即申请</button>
+        </div>
+    </section>
+
+    <!-- 申请流程 -->
+    <section style="margin: 2rem 0;">
+        <h2>📮 应聘方式</h2>
+        <p>请将简历发送至：<strong>hr@xxx-tech.com</strong></p>
+        <p>邮件标题格式：<em>[应聘岗位]-姓名-专业</em></p>
+        <p>联系电话：400-800-1234（工作日9:00-17:30）</p>
+    </section>
+
+    <footer>
+        <p>© 2025 广州市模创三维数字技术有限公司 保留所有权利</p>
+        <p>公司地址：广州市黄埔区科学大道1号4栋236房</p>
+    </footer>
 </body>
 </html>
